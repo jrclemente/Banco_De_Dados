@@ -92,3 +92,5 @@ DELIMITER ;
 
 --Utilizar Query SQL (Lado Direito)
 SELECT Qtde_Clientes_Venda('2024-07-12') AS Qtde_Clientes_Hoje FROM DUAL;
+--Ou utilizar assim
+SELECT Qtde_Clientes_Venda(CAST(CURRENT_TIMESTAMP AS DATE)) AS Qtde_Clientes_Hoje FROM DUAL;
